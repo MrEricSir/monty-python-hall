@@ -71,11 +71,11 @@ def run_multiple_games(num_games=1, num_doors=3):
     games_won_stayed = 0
     games_won_switched = 0
     for i in range(0, num_games):
-        # Run without switching
+        # Run without switching doors.
         if run_game(False, num_doors=num_doors):
             games_won_stayed += 1
 
-        # Run without switching
+        # Run with switching doors.
         if run_game(True, num_doors=num_doors):
             games_won_switched += 1
 
